@@ -1,0 +1,105 @@
+1.given number is odd or even or zero using ladder if:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int num1=obj.nextInt();
+        if(num1>0)//if()
+        System.out.println("Positive");
+        else if(num1==0)
+        System.out.println("Neither Positive Nor Negative");
+        else
+        System.out.println("Negative");
+    }
+}
+
+2. given number is odd or even or zero using nested if:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int num1=obj.nextInt();
+        if(num1>0)
+        {
+            if(num1%2==0)
+            System.out.println("Positive Even");
+            else
+            System.out.println("Positive Odd");
+        }
+        else
+        System.out.println("Negative");
+    }
+}
+
+3.print a value using a switch case condition:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int choice=obj.nextInt();
+        switch(choice)
+        {
+            case 1:
+                System.out.println("Balance Enquiry");
+                break;
+            case 2:
+                System.out.println("Withdraw");
+                break;
+            case 3:
+                System.out.println("Deposit");
+                break;
+            case 4:
+                System.out.println("Pin Change");
+                break;
+            default:
+                System.out.println("Enter 1-4");
+                
+        }
+        
+    }
+}
+
+4.display a number using a ternary operator:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int num1=obj.nextInt();
+        int num2=obj.nextInt();
+       System.out.println((num1>num2)?(num1):(num2));
+        
+    }
+}
+
+5. Display a pass or fail using if else condition:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int mark=obj.nextInt();
+        if(mark>=35)
+                System.out.println("PASS"); 
+        else
+                System.out.println("FAIL");
+}
+}
+
+6. find the minimum of two numbers:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int input1=obj.nextInt();
+        int input2=obj.nextInt();
+        if(input1<input2)
+                System.out.println("Minimum of "+input1+" and "+input2+" is: " +input1); 
+        else
+         System.out.println("Minimum of "+input1+" and "+input2+" is: " +input2); 
+    }
+}
