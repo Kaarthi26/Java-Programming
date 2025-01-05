@@ -1,0 +1,178 @@
+1.while cindition:
+
+public class Main
+{
+	public static void main(String[] args) {
+		int i=0;
+		while(i<5){
+				System.out.println("Hello World");
+				i++;
+	    }
+	}
+}
+
+@. do while condition:
+
+public class Main
+{
+	public static void main(String[] args) {
+		int i=0;
+		do{
+				System.out.println("Hello World");
+				i++;
+	    }while(i<5);
+	}
+}
+
+3.for condition:
+
+public class Main
+{
+	public static void main(String[] args) {
+		for(int i=0;i<5;i++)
+      {
+				System.out.println("Hello World");
+				
+	    }
+	}
+}
+
+4.print the value from the input getting from the user:
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner obj=new Scanner(System.in);
+	    int limit=obj.nextInt();
+		for(int i=1;i<=limit;i++)
+		System.out.print(i+" ");
+	}
+}
+
+5.Even number till limit
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner obj=new Scanner(System.in);
+	    int limit=obj.nextInt();
+		for(int i=0;i<=limit;i++)
+		{
+		    if(i%2==0)//Even***for odd if(i%2!=0)
+				System.out.print(i+" ");
+	    }
+	}
+}
+
+6.A-Z
+
+public class Main
+{
+	public static void main(String[] args) {
+	   	for(char i=65;i<=90;i++)//check for lower case (97-122) & number(48-57))
+		{
+		   System.out.print(i+" ");
+	    }
+	}
+}
+
+7.n*n Pattern
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int limit=sc.nextInt();
+	   for(int row=1;row<=limit;row++)
+	   {
+	      	   
+	   for(int col=1;col<=limit;col++)
+	   System.out.print("*");
+	   
+	   System.out.println();
+	   }
+	}
+}
+
+8.Left triangle
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int limit=sc.nextInt();
+	   for(int row=1;row<=limit;row++)
+	   {
+	      	   
+	   for(int col=1;col<=row;col++)
+	   System.out.print("*");
+	   
+	   System.out.println();
+	   }
+	}
+}
+
+9.Right triangle
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int limit=sc.nextInt();
+	   for(int row=1;row<=limit;row++)
+	   {
+	   
+	   for(int col=1;col<=limit-row;col++)
+	   System.out.print(" ");
+	   
+	   for(int col=1;col<=row;col++)
+	   System.out.print("*");
+	   
+	   System.out.println();
+	   }
+	}
+}
+
+10.Mulitiplication of 2 nos without using *
+
+import java.util.Scanner;
+public class Main
+{
+  public static void main(String args[])
+{
+  Scanner obj=new Scanner(System.in);
+  int sum=0;
+  int num1=obj.nextInt();
+  int num2=obj.nextInt();
+  
+  for(int i=1;i<=num1;i++)
+  sum=sum+num2;
+  System.out.println(sum);
+}
+}
+
+
+11.Fibonacci Series
+
+import java.util.Scanner;
+public class Main{
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    int f=1,s=1,t,count;
+    count=sc.nextInt();
+    System.out.print(f+" "+s);
+    for(int i=1;i<=count;i++)
+    {
+      t=f+s;
+      System.out.print(" "+t);
+      f=s;
+      s=t;
+    }
+  }
+}
