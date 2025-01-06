@@ -124,4 +124,124 @@ output:
   123
   123
   123
+
+8. Code for printing the character A-Z:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc =  new Scanner (System.in);
+        int limit = sc.nextInt();
+            char ch = 'A';
+        for (int row=1;row<=limit;row++)
+        {
+            
+            for (int col=1;col<=limit;col++)
+                System.out.print(ch++);
+
+            System.out.println();
+        }
+    }
+}
+output:
+3
+ ABC
+ DEF
+ GHI
+
+9. Code for printing the character A-Z:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc =  new Scanner (System.in);
+        int limit = sc.nextInt();
+        for (int row=1;row<=limit;row++)
+        {
+            char ch = 'A';
+            for (int col=1;col<=limit;col++)
+                System.out.print(ch++);
+
+            System.out.println();
+        }
+    }
+}
+output:
+3
+ ABC
+ ABC
+ ABC
+
+10.Code for printing the character A-Z:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc =  new Scanner (System.in);
+        int limit = sc.nextInt();
+           
+        for (int row=1;row<=limit;row++)
+        {
+            char ch = 'A'; 
+            for (int col=1;col<=row;col++)
+                System.out.print(ch++);
+
+            System.out.println();
+        }
+    }
+}
+output:
+3
+ A
+ AB
+ ABC
+
+11.Code for printing the left * pattern at reverse:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        int limit = sc.nextInt();
+        for (int row=1;row<=limit;row++)
+        {
+            for (int col=limit;col>=row;col--) 
+                System.out.print("*");
+                
+            System.out.println();
+        
+        }
+    }
+}
+output:
+3
+ ***
+ **
+ *
+
+12.Code for printing the right * pattern at reverse:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        int limit = sc.nextInt();
+        for (int row=1;row<=limit;row++)
+        {
+            for (int col=limit-row;col<=limit;col++)
+                System.out.print(" ");
+                
+            for (int col=limit;col>=row;col--) 
+                System.out.print("*");
+                
+            System.out.println();
+        
+        }
+    }
+}
+output:
+3 
+ ***
+  **
+   *
   
