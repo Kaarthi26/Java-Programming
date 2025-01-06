@@ -1,0 +1,127 @@
+1. Code for printing the * at seperate line:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        int limit = sc.nextInt();
+        for(int i=1;i<=limit;i++)
+            System.out.println("*");
+    }
+}
+
+2. Code for printing the * at same line:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        int limit = sc.nextInt();
+        for(int i=1;i<=limit;i++)
+            System.out.print("*");
+    }
+}
+
+3.Code for printing n*n * pattern:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        int limit = sc.nextInt();
+        for(int row=1;row<=limit;row++)
+        {
+            for (int col=1;col<=limit;col++)
+                System.out.print("* ");
+                
+            System.out.println();
+        }
+    }
+}
+
+4.Code for printing left triangle * pattern:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        int limit = sc.nextInt();
+        for(int row=1;row<=limit;row++)
+        {
+            for (int col=1;col<=row;col++)
+                System.out.print("* ");
+                
+            System.out.println();
+        }
+    }
+}
+
+5.Code for printing right triangle * pattern:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc =  new Scanner (System.in);
+        int limit = sc.nextInt();
+        
+        for (int row=1;row<=limit;row++)
+        {
+            for (int col=1;col<=limit-row;col++)
+                System.out.print(" ");
+            
+            for (int col=1;col<=row;col++)
+                System.out.print("*");
+            
+        System.out.println();
+        }
+    }
+}
+
+6.Code for printing the row value:
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc =  new Scanner (System.in);
+        int limit = sc.nextInt();
+                                                                                   
+        for (int row=1;row<=limit;row++)                                   
+        {
+            
+            for (int col=1;col<=limit;col++)
+                System.out.print(row);
+            
+        System.out.println();
+        }
+    }
+}
+output:
+3
+  111
+  222
+  333
+
+7.Code for printing the column value:
+  
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc =  new Scanner (System.in);
+        int limit = sc.nextInt();
+        
+        for (int row=1;row<=limit;row++)
+        {
+            
+            for (int col=1;col<=limit;col++)
+                System.out.print(col);
+            
+        System.out.println();
+        }
+    }
+}
+output:
+3
+  123
+  123
+  123
+  
